@@ -21,7 +21,7 @@ const uniqueCrops = [...new Map(crops.map(i => [i.id, i])).values()]
 cropSelect.innerHTML = ""
  uniqueCrops.forEach( i =>  cropSelect.innerHTML += `<option value="${i.id}">${i.desc}</option>`)
 
- VariableGraphComponent(ProvinceID, cropSelect.value)
+ VariableGraphComponent(ProvinceID, cropSelect.value);
 }
 
 

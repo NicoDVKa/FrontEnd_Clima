@@ -62,7 +62,7 @@
       </nav>
     </header>
     <body class="my-5 pt-4">
-      <section class="container">
+      <section class="">
         <div class="d-flex">
           <h5 class="me-3 my-auto align-middle fw-normal">Seleccione un año</h5>
           <select
@@ -72,14 +72,68 @@
           ></select>
         </div>
         <div class="mx-2 my-2"><hr /></div>
+        <div class="d-flex gap-2 justify-content-between">
+          <div id="chartDiv" class="" style="height: 80vh; width: 30vw;"></div>
+          
+          <div>
+            <div class="d-flex">
+              <h5 class="me-3 my-auto align-middle fw-normal">
+                Seleccione una provincia
+              </h5>
+              <select
+              id="province_select"
+              class="form-select align-middle me-3"
+              style="width: auto"
+              ></select>
+              
+              <h5 class="me-3 my-auto align-middle fw-normal">
+                Seleccione un cultivo
+              </h5>
+              <select
+                id="crop_select"
+                class="form-select align-middle m"
+                style="width: auto"
+                ></select>
+              </div>     
+              <div id="grafico_variable" class="" style="height: 40vh; width: 60vw;"></div>
+            
+              <div class="d-flex">
+                <h5 id="year_h5" class="me-3 my-auto align-middle fw-normal">
+                
+                </h5>
+                <h5 class="me-3 my-auto align-middle fw-normal">
+                  Seleccione una provincia
+                </h5>
+                <select
+                id="province_select2"
+                class="form-select align-middle me-3"
+                style="width: auto"
+                ></select>
+                
+                <h5 class="me-3 my-auto align-middle fw-normal">
+                  Seleccione una metrica
+                </h5>
+                <select
+                  id="metric_select"
+                  class="form-select align-middle m"
+                  style="width: auto"
+                  ></select>
+                </div>     
+                <div id="grafico_variable1" class="" style="height: 40vh; width: 60vw;"></div>
 
-        <div id="chartDiv" class="w-100" style="height: 550px"></div>
-        <div id="table" class="mx-2 my-2"><hr /></div>
+          </div>
+          
+        </div>
+          
 
-        <table
+
+
+          <div id="table" class="mx-2 my-2"><hr/></div>
+          
+          <table
           id="myTable"
           class="table table-striped table-bordered"
-          style="width: 100%"
+          style="width: 95%; height: 70vh"
         >
           <thead>
             <tr>
@@ -95,27 +149,7 @@
         </table>
         <div id="graph" class="mx-2 my-2"><hr /></div>
 
-        <div class="d-flex">
-          <h5 class="me-3 my-auto align-middle fw-normal">
-            Seleccione una provincia
-          </h5>
-          <select
-            id="province_select"
-            class="form-select align-middle me-3"
-            style="width: auto"
-          ></select>
-
-          <h5 class="me-3 my-auto align-middle fw-normal">
-            Seleccione un cultivo
-          </h5>
-          <select
-            id="crop_select"
-            class="form-select align-middle m"
-            style="width: auto"
-          ></select>
-        </div>
-
-        <div id="grafico_variable" class="w-100" style="height: 700px"></div>
+       
       </section>
     </body>
     <footer></footer>
