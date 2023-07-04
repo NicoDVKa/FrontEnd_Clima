@@ -1,4 +1,4 @@
-import { fetchProvincias } from "../services/fetchProvincias.js"
+import { fetchProvinciasByYear } from "../services/fetchProvincias.js"
 import metricSelectComponent from "./metricSelectComponent.js"
 
 const select = document.getElementById("province_select2")
@@ -10,8 +10,8 @@ yearSelect.addEventListener("change", ()=>{
 
 
 const ProvinceSelectComponent2 = async (year) =>{
- const provinces = await fetchProvincias()
- console.log(provinces);
+ const provinces = await fetchProvinciasByYear(year)
+
  select.innerHTML = ""
  provinces.forEach( i =>  select.innerHTML += `<option value="${i.id}">${i.desc}</option>`)
 
