@@ -39,10 +39,10 @@ const MapComponent = async (year) => {
       pointValue: function(p) {
         return p.options('z');
       },
-      colors: ['#C4FFFF', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#bd0026', '#b00026'],
-      ranges: { min: -10, max: 35, interval: 2.5 }
+      colors: ['#C4FFFF', '#ffeda0', '#fed976',  '#fd8d3c', '#fc4e2a'],
+      ranges: { min: -10, max: 35, interval: 2 }
     },
-    legend_title_label_text: '                                                        ',
+    legend_title_label_text: '                                                                      ',
 
     defaultPoint: {
       label_text: '%stateCode',
@@ -50,7 +50,11 @@ const MapComponent = async (year) => {
     },
 
     /* Pad the map data points for separation from the chart area boundary. */
-    defaultSeries_shape_padding: 0.02,
+    defaultSeries_shape_padding: 0,
+    legend:{
+      position: 'bottomright',
+      cellSpacing: 1,
+    },
     series: [
       {
         map: 'ar',

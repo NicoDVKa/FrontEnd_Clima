@@ -2,8 +2,49 @@
     background-color: rgba(216, 216, 216, 0.822)
 } */
 
+body{
+    font-size: 1rem !important;
+}
+
 #nav_icon{
     width: 2.5rem;
 }
 
 
+select{
+    height: 2rem;
+    font-size: 1rem !important;
+    padding: 0 1rem !important;
+    width: min-content !important;
+}
+
+
+
+li{
+    display: flex !important;
+    align-items: center !important;
+}
+
+li p{
+    margin: 0 !important;
+}
+
+li select{
+    height: 1.5rem !important;
+    width: min-content;
+    padding-right: 2rem !important;
+    display: flex;
+    align-items: center;
+    margin-left: .5rem !important;
+}
+
+select{
+    height: 1.5rem !important;
+    width: min-content;
+    padding-right: 2rem !important;
+    display: flex;
+    align-items: center;
+    margin-left: .5rem !important;
+}
+
+  
